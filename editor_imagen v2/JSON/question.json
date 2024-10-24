@@ -1,0 +1,55 @@
+{
+  "questions": [ 
+    {
+      "id": 1, 
+      "question": "¿Cómo usar los filtros?",
+      "answer": "Para usar los filtros, primero seleccione la imagen que desea editar en su biblioteca o área de trabajo. Luego, haga clic en el botón 'Filtros' ubicado en la barra de herramientas. Esto abrirá un menú con una variedad de opciones de filtros. Puede desplazarse por los filtros disponibles y hacer clic en cada uno para ver una vista previa de cómo afectará a su imagen. Una vez que encuentre el filtro que más le guste, haga clic en 'Aplicar' para confirmar su elección. También puede ajustar la intensidad del filtro utilizando los controles deslizantes que suelen estar disponibles en el menú de filtros. No olvide guardar los cambios después de aplicar el filtro deseado."
+  
+    },
+    {
+      "id": 2,
+      "question": "¿Cómo usar la herramienta de recortar imagen?",
+      "answer": "Para recortar una imagen, primero seleccione la herramienta de recorte en la barra de herramientas. A continuación, arrastre el cursor sobre la imagen para delinear el área que desea mantener. Puede ajustar el tamaño y la posición del área seleccionada arrastrando las esquinas o los bordes del cuadro de recorte. Una vez que esté satisfecho con la selección, haga clic en el botón de confirmar recorte o presione Enter para aplicar los cambios. Esto recortará la imagen según su selección, eliminando las partes no deseadas."
+    },
+    {
+      "id": 3,
+      "question": "¿Cómo guardar una imagen editada?",
+      "answer": "Para guardar una imagen editada, primero asegúrese de haber realizado todas las modificaciones deseadas. Luego, haga clic en el botón 'Guardar' en la barra de herramientas. Se abrirá un menú donde podrá ingresar un nombre para el archivo y seleccionar el formato de archivo deseado (PNG, JPEG o WEBP). Una vez configurado, haga clic en 'Descargar' para guardar la imagen en su dispositivo."
+    },
+    {
+      "id": 4,
+      "question": "¿Qué formatos de imagen permite el editor?",
+      "answer": "El editor permite trabajar con varios formatos de imagen, incluidos los más comunes como JPEG, PNG, y SVG. Además, también es compatible con otros formatos como BMP, GIF y TIFF. Esta amplia compatibilidad garantiza que puede importar y exportar imágenes en el formato que mejor se adapte a sus necesidades, ya sea para la web, impresión o almacenamiento de alta calidad."
+    },
+    {
+      "id": 5,
+      "question": "¿Cómo puedo ajustar el brillo, contraste y saturación de una imagen?",
+      "answer": "Para ajustar el brillo, contraste y saturación de una imagen, primero seleccione la herramienta de ajustes de imagen en la barra de herramientas. Aparecerá un panel con controles deslizantes para cada uno de estos parámetros. Mueva los controles deslizantes hacia la izquierda o la derecha para aumentar o disminuir el brillo, el contraste y la saturación según sea necesario. Observe cómo los cambios afectan la imagen en tiempo real. Una vez que esté satisfecho con los ajustes, haga clic en 'Aplicar' para guardar los cambios."
+    },
+    {
+      "id": 6,
+      "question": "¿Se puede trabajar con imágenes en blanco y negro o en color sepia?",
+      "answer": "Sí, el editor permite trabajar con imágenes en blanco y negro o en color sepia. Para hacerlo, seleccione la herramienta de ajustes de imagen en la barra de herramientas. Luego, busque y seleccione la opción correspondiente para convertir la imagen a blanco y negro o aplicar el efecto sepia. Puede ajustar la intensidad del efecto para obtener el resultado deseado. Estos efectos pueden dar a sus imágenes un aspecto clásico o nostálgico."
+    },
+    {
+      "id": 7,
+      "question": "¿Cómo puedo deshacer y rehacer acciones en el editor de imágenes?",
+      "answer": "Para deshacer y rehacer acciones, use los botones 'Deshacer' y 'Rehacer' en la barra de herramientas.                                  Alternativamente, Esta funcionalidad le permite navegar fácilmente entre diferentes estados de edición, facilitando la corrección de errores y la experimentación con diferentes efectos y ajustes sin perder su progreso."
+    },
+    {
+      "id": 8,
+      "question": "¿Se pueden aplicar filtros y efectos especiales a las imágenes?",
+      "answer": "Sí, el editor permite aplicar una variedad de filtros y efectos especiales a las imágenes. Para hacerlo, seleccione la herramienta de filtros y efectos en la barra de herramientas. Aparecerá un menú con diferentes opciones de filtros y efectos. Puede hacer clic en cada uno para ver una vista previa de cómo afectará a su imagen. Una vez que encuentre el filtro o efecto deseado, haga clic en 'Aplicar' para confirmar los cambios. Estos filtros y efectos pueden mejorar la estética de sus imágenes y darles un toque único."
+    },
+    {
+      "id": 9,
+      "question": "¿Se pueden aplicar varios filtros a la vez?",
+      "answer": "Sí, puede aplicar varios filtros a una imagen simultáneamente. Después de aplicar un filtro, puede seguir agregando más filtros para combinar efectos y lograr el aspecto deseado. Sin embargo, es importante ajustar la intensidad de cada filtro para evitar efectos no deseados."
+    },
+    {
+      "id": 10,
+      "question": "¿Se pueden rotar las imagenes?",
+      "answer": "El editor de imágenes le permite rotar una imagen. La opcion de rotación esta disponible en el menú de ajustes para girar la imagen según sea necesario."
+    }
+  ]
+} 

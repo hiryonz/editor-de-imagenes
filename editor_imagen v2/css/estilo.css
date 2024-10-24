@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1b1d;
+    color: #bedef2d2;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main, #pagina2 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1c1b1d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    background-color: #333; 
+}
+
+h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+p {
+    color: #bedef2d2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #222020;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.respuesta {
+    display: none;
+    color: white;
+}
+
+.visible {
+    display: block;
+}
+
+.fa-icono {
+    margin-left: 5px;
+}
+
+#navegacion-paginas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*CAMBIO NAVEGACION PAGINAS */
+#navegacion-paginas button {
+    margin: 10px 5px;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navegacion-paginas button.active {
+    border-bottom: 2px solid #fff;
+}
+
+#navegacion-paginas button:hover {
+    background-color: #777;
+}
+
+/*ESTILO DE BARRA DE BUSQUEDA*/
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-bar {
+    width: 35%; 
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #686565; 
+    color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar::placeholder {
+    color: #ccc; /* Color del texto de marcador de posición */
+}
+
+#search-bar:focus {
+    outline: none; /* Quitamos el contorno al enfocar */
+    background-color: #777; 
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrar imagen con clip-path</title>
+    <style>
+        .contenedor {
+            width: 300px; /* Ancho del contenedor */
+            height: 300px; /* Alto del contenedor */
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+        }
+
+        .imagen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            clip-path: inset(20px 200px 20px 20px); /* Recorta la imagen */
+            /* Ajustes para asegurar que la imagen se muestre completamente */
+            max-width: none;
+            max-height: none;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img src="../img/delete.png" alt="Imagen recortada" class="imagen">
+    </div>
+</body>
+</html>

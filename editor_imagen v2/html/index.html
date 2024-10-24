@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css"> 
+    <!--css del tutorial-->
+    <link rel="stylesheet" href="../css/PerTour.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/hopscotch/dist/css/hopscotch.min.css">
+       <!--css del tutorial-->
+</head>
+<body> 
+
+       <!-- Tutorial -->  
+       <div id="overlay"></div>
+         <!-- Ventana Emergente Tutorial --> 
+    <div class="Fondo" id="window"> 
+        <div class="Ventana" id="vent">
+            <div id="cerrar"><img class="Btncerrar" src="../img/delete.png"></div>
+            <h4>Tutorial Paso a Paso</h4>
+            <p>¿Desea Iniciar este tutorial para aprender como funciona la página?</p>
+            <button type="button" class="BTN" id="seguir">SI</button>
+            <button id="cerrar" type="button" class="BTN">NO</button>
+        </div> 
+    </div>
+    <!-- Ventana Emergente Tutorial --> 
+
+
+    <div class="contenedor-cargaCompresion">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <h3 class="compressText">Comprimiendo Imagen</h3>
+    </div>
+
+    <div class="contenedor-alerta1">
+        <div class="alert1-formatos">
+            <div class="alert1-formatos-texto"><p>Solo aceptamos estos formatos: PNG, JPG/JPEG, WEBP</p></div>
+            <div class="alert1-formatos-boton"><button class="btn btn-danger" id="cerrar-alert">Cerrar</button></div>
+        </div> 
+    </div> 
+
+    <div class="contenedor-alerta2">
+        <div class="alert2-tamano">
+            <div class="alert2-tamano-texto"><p>Imagen muy grande, solo aceptamos debajo de 150 mb.</p></div>
+            <div class="alert2-tamano-boton"><button class="btn btn-danger" id="cerrar-alert-tamano">Cerrar</button></div>
+        </div> 
+    </div> 
+
+
+    <div class="contenedor-alerta3">
+        <div class="alert3-tamano2">
+            <div class="alert3-tamano-texto2">
+                <p>Estas utilizando imagens muy grandes, pueden provocar errores</p>
+                <p>aveces puede volver negro o blanco la pantalla.</p>
+            </div>
+            <div class="alert3-tamano-boton2"><button class="btn btn-danger" id="cerrar-alert-tamano2">Cerrar</button></div>
+        </div> 
+    </div> 
+
+    <div class="contenedor template1">
+        <header class="header">
+            <button type="button" class="btn btn-light navbar-boton" id="menu-boton"><i class="fa-solid fa-bars"></i></button>
+            <div class="guardar">
+                <button type="button" class="btn btn-light navbar-boton" id="subir-boton">Subir</button>
+                <button type="button" class="btn btn-light navbar-boton guardar-boton2 disable" id="guardar-boton2">Guardar</button>
+                <div class="contenedor-guardar">
+                    <button type="button" class="btn btn-light" id="btnOpcion-GaleriaCambio-boton">Guardar En galeria</button>
+                    <!--button type="button" class="btn btn-light" id="btnOpcion-GaleriaNuevo-boton">Guardar nuevo</button-->
+                    <button type="button" class="btn btn-light navbar-boton guardar-boton disable" id="guardar-boton" >Descargar</button>
+                </div>
+                <div class="contenedor-panel-guardar">
+                    <div class="panel-guardar-boton">
+                        <div class="panel-0">
+                            <p class="texto-imagen">Imagen Original:</p>
+                            <p class="texto-imagen">Imagen Editada:</p>
+                        </div>
+                        <div class="panel-1">
+                            <div class="contenedor-imagen-panel-1">
+                                <img class="imagen orininal" id="imagen-previo" src="" alt="">
+                            </div>
+                            <div class="contenedor-imagen-panel-1">
+                                <img class="imagen editada" id="imagen-final" src="" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="panel-2">
+                            <div class="contenedor-formatos-panel-2">
+                                <p>Nombre del archivo:</p>
+                                <input type="text" id="nombre-archivo" maxlength="25" placeholder="Ejemplo: Foto_editada">
+                                <select name="formatos" class="form-select" id="select-formatos">
+                                    <option value="png">PNG</option>
+                                    <option value="jpeg">JPEG</option>
+                                    <option value="webp">WEBP</option>
+                                </select>
+                            </div>
+                            <div class="contenedor-boton-panel-2">
+                                <button class="btn btn-light cerrar-descargar-boton">cerrar</button>
+                                <button class="btn btn-light descargar-boton">Descargar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-light navbar-boton" id="ayuda-boton">Ayuda</button>
+            </div>
+
+            
+            <aside class="sidebar3 sidebar-hidden" id ="ayudaMenu">
+                <div class="opciones-ayuda-container">
+                    <button class="btn btn-light sidebar3-boton" id="preguntas-frecuentes">Preguntas Frecuentes</button>
+                    <button class="btn btn-light sidebar3-boton" id="contacto">Contacto: 585-898-5171</button> 
+                    <button class="btn btn-light sidebar3-boton" id="Guia-Web">Guia de Pagina Web</button>
+                    <button class="btn btn-light sidebar3-boton" id="cerrar-ayuda-btn">Cerrar</button>
+                </div>
+            </aside>
+            
+        </header>
+
+        <main class="contenido">
+            <div class="canvas">   
+                <div class="canvas-recortar" id="canvas-recortar-container">
+                    <canvas id="canvas-recortar"></canvas>
+                </div>     
+                <img class="imagen" id="imagen" alt="Gato Gordo">
+                <label class="subir-imagen-boton" for="input-file" id="label-input-file" style="display: flex; flex-direction: column; align-items: center; cursor: pointer;"><i class="fa-solid fa-image" style="font-size: 200px;"></i><p style="color: rgba(192, 182, 182, 0.721);">Selecciones una Imagen</p></label>
+                <input class="subir-imagen" type="file" id="input-file" accept="image/PNG, image/JPEG, image/JPG, image/WEBP">
+                <button id="previsualizacion">Ver original</button>
+            </div>
+        </main>
+
+        <aside class="sidebar1 sidebar-hidden">
+            <div class="opciones-menu">
+                <button type="button" class="btn btn-light sidebar1-boton activo-sidebar1 disable" id="galeria">Galeria</button>
+                <button type="button" class="btn btn-light sidebar1-boton disable" id="filtro">Filtros</button>
+                <button type="button" class="btn btn-light sidebar1-boton disable" id="ajuste">Ajustes</button>
+            </div>
+
+        </aside>
+
+        <aside  id="sidebar2" class="sidebar2 sidebar-hidden">
+            <div class="opciones-filtros">
+                <!--los botones de filtro-->
+                <h2>Filtros</h2>
+                <button class="activo-filtro btn btn-light sidebar2-boton" id="grises">Escala de grises</button>
+                <button class="btn btn-light sidebar2-boton" id="sepia">Sepia</button>
+                <button class="btn btn-light sidebar2-boton" id="desenfoque">Desenfoque</button>
+                <button class="btn btn-light sidebar2-boton" id="brillo">Brillo</button>
+                <button class="btn btn-light sidebar2-boton" id="contraste">Contraste</button>
+                <button class="btn btn-light sidebar2-boton" id="opacidad">Opacidad</button>
+            </div>
+            <div class="opciones-ajustes">
+                <!--los botones de filtro-->
+                <h2>Ajustes</h2>
+                <button class="activo-ajuste btn btn-light sidebar2-boton" id="invertir">Invertir</button>
+                <button class="btn btn-light sidebar2-boton" id="girar">Girar</button>
+                <button class="btn btn-light sidebar2-boton" id="recortar">Recortar Imagen</button>
+            </div>
+            <div class="opciones-galeria" id="galeria">
+                <!--los botones de filtro-->
+                <h1>Galeria</h1>
+                <div class="contenedor-galeria" id="contenedor-galeria-original">
+                    <div class="contenedor-control-galeria">
+                        <input type="text" class="input-nombre-galeria" maxlength="18" placeholder="nombre del proyecto">
+                        <button type="button" class="btn btn-light  btn-galeria"><i class="fa-solid fa-trash" style="color: #af6262a6;"></i></button>
+                    </div>
+                    <div class="contenedor-imagen-galeria">
+                        <img src="" alt="imagenes de galeria" class="imagen-galeria"> 
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="control">
+            <div class="control-principal">
+                <div class="control-principal-container">
+                    <div class="nombre">
+                        <p class="nombre">Escala de grises</p>
+                    </div>
+                    <div class="range">
+                            <input class="form-range" id="range" type="range" value="0" max="100" min="0">
+                            <p class="valor">0%</p>
+                    </div>
+                </div>
+                <div class="control-principal-ajuste-container">
+                    <div class="contenedor-ajuste contenedor-ajuste-invertir">
+                        <button class="btn btn-light btn-ajuste" id="invert-v"> <img class="img-ajuste" src="../img/vertical-invert.png" alt=""> </button>
+                        <button class="btn btn-light btn-ajuste" id="invert-h"> <img class="img-ajuste" src="../img/horizontal-invert.png" alt=""></button>
+                    </div>
+                    <div class="contenedor-ajuste contenedor-ajuste-girar">
+                        <button class="btn btn-light btn-ajuste" id="girar-left"><img class="img-ajuste" src="../img/rote izquierda.png" alt=""> </button>
+                        <button class="btn btn-light btn-ajuste" id="girar-right"><img class="img-ajuste" src="../img/rote derecha.png" alt=""> </button>
+                    </div>
+                    <div class="contenedor-ajuste contenedor-ajuste-recortar">
+                        <button class="btn btn-light btn-ajuste2" id="recortar-btn">recortar</button>
+                        <button class="btn btn-light btn-ajuste2" id="resetear-btn">resetear</button>
+                    </div>
+                </div>
+ 
+            </div>
+            <div class="inicio_disabled control-secundario">
+                <div class="reset">
+                    <button class="btn btn-light control-secundario-boton" id="reset"><i class="fa-solid fa-rotate-left" ></i></button>
+                </div>
+                <div  id="deshacer" class="deshacer">
+                    <button class="btn btn-light control-secundario-boton" id="atras"><i class="fa-solid fa-arrow-left"></i> </button>
+                    <button class="btn btn-light control-secundario-boton" id="adelante"><i class="fa-solid fa-arrow-right"></i></button>           
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../JavaScript/Tour.js"></script>  
+    <script src="../JavaScript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script> 
+    <script src="https://unpkg.com/hopscotch/dist/js/hopscotch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/compressorjs@1.1.1/dist/compressor.min.js"></script>
+
+    <!--script src="https://cdn.jsdelivr.net/npm/browser-image-compression@1.0.16/dist/browser-image-compression.js"></script-->
+
+    <script src="../JavaScript/compressor/compress.js"></script>
+
+</body>
+</html>

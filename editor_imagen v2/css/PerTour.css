@@ -1,0 +1,149 @@
+.Ventana{  /*Vetana Emergente*/
+background-color: rgb(73, 73, 72); 
+width: 30%;  
+position:relative;
+color:#ffffff; 
+font-size: 18px; 
+text-align:center;
+padding:33px ;
+min-height: 250px;
+border-radius: 24px; 
+left:36%; 
+top:27%;  
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+display: none;
+} 
+.Fondo{ /*Fondo de la ventana Emergente*/
+    position:absolute; 
+    display:none;
+    background: #7c7c7c68; 
+    width: 100%;   
+    height:100% ;  
+    z-index: 1200;
+} 
+
+/*Botones de la ventana emergente*/ 
+.BTN{
+    background-color: #333;
+    color: #ccc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+.BTN:hover {
+    background-color: #78dde2; 
+    color:#333
+  }  
+
+.Btncerrar{   
+    position:absolute;
+   height: 20px; 
+   width: 20px; 
+   right: 4%; 
+   top:8%;
+} 
+.Btncerrar:hover{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.837);
+    border-radius: 50%;
+}
+
+/* Hopscotch Customization */ 
+.hopscotch-bubble {
+    background-color: #ffffff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 20px; 
+    border-color: #337ab7;
+    width: 300px;
+    position: absolute;
+    z-index: 1200; 
+  }
+  div.hopscotch-bubble .hopscotch-bubble-container {
+    padding-left: 0; 
+  }
+  .hopscotch-step > .hopscotch-step-number {
+    display: none;
+  }
+  .hopscotch-bubble-pointer {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #ffffff00 transparent transparent transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .hopscotch-prev, .hopscotch-next, .hopscotch-done {
+    background-color: #337ab7;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .hopscotch-bubble .hopscotch-bubble-container {
+    border-radius: 20%; 
+  } 
+
+  .hopscotch-prev:hover, .hopscotch-next:hover, .hopscotch-done:hover {
+    background-color: #23527c;
+  } 
+  .hopscotch-bubble-number {
+    display: none !important;
+  }  
+
+
+
+  .hopscotch-bubble-arrow-border {
+    border-left: 20px solid #ffffff00  !important; 
+    border-right: 20px solid #ffffff00  !important; 
+    border-top: 20% solid #ffffff00  !important;  
+    border-bottom: 20% solid  #ffffff00  !important;
+  }
+  
+  #cancelar-tour {
+    background-color: #333;
+    color: #ccc;
+    padding: 6px;
+    border: none;    
+    cursor: pointer;
+    position: absolute;
+    border-radius: 4px;
+    font-size: 12px; 
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease; 
+    margin-top: 10px; 
+    font-weight: 700;
+    margin-left: 160px;
+  }
+  
+  #cancelar-tour:hover {
+    background-color: #dd3838; 
+    color: #ffffff;
+  }
+   
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.733); /* color semi-transparente */
+    display: none; 
+    z-index: 1100;
+  }  
+
+  div.hopscotch-bubble .hopscotch-bubble-content {
+   margin:0 !important;
+} 
+.hidden {
+  display: none;
+}
