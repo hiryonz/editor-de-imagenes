@@ -43,7 +43,7 @@ Un editor de imágenes basado en la web que permite a los usuarios cargar, edita
 </ol>
 
 
-## iamgenes del sistema
+## imagenes del sistema
 ![img1](https://github.com/hiryonz/editor-de-imagenes/blob/def91e6cdfa649b0f8b2752c749733883f9b8933/img_readme/img1.png)
 
 ![img1](https://github.com/hiryonz/editor-de-imagenes/blob/def91e6cdfa649b0f8b2752c749733883f9b8933/img_readme/preguntas.png)
