@@ -2,6 +2,8 @@
 
 Un editor de imágenes basado en la web que permite a los usuarios cargar, editar y comprimir imágenes. El proyecto utiliza JavaScript, CSS, HTML y el CDN `browser-image-compressor` para comprimir imágenes.
 
+![home](https://github.com/hiryonz/editor-de-imagenes/blob/def91e6cdfa649b0f8b2752c749733883f9b8933/img_readme/home.png)
+
 ## Características
 
 - **Cargar imágenes:** Soporta formatos PNG, JPG/JPEG, WEBP.
@@ -40,6 +42,14 @@ Un editor de imágenes basado en la web que permite a los usuarios cargar, edita
   <li>Abre <code>index.html</code> en tu navegador preferido.</li>
 </ol>
 
+
+## iamgenes del sistema
+![img1](https://github.com/hiryonz/editor-de-imagenes/blob/def91e6cdfa649b0f8b2752c749733883f9b8933/img_readme/img1.png)
+
+![img1](https://github.com/hiryonz/editor-de-imagenes/blob/def91e6cdfa649b0f8b2752c749733883f9b8933/img_readme/preguntas.png)
+
+
+![img2](
 <h2>Uso</h2>
 
 <ol>
